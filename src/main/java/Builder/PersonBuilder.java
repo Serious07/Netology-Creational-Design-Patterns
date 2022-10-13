@@ -1,3 +1,5 @@
+package Builder;
+
 public class PersonBuilder {
     private String name;
     private String surName;
@@ -30,11 +32,11 @@ public class PersonBuilder {
 
     public Person build() {
         if (name == null || name == "") {
-            throw new IllegalStateException("В PersonBuilder не установлено имя!");
+            throw new IllegalStateException("В builder.PersonBuilder не установлено имя!");
         }
 
         if (surName == null || surName == "") {
-            throw new IllegalStateException("В PersonBuilder не установлена фамилия!");
+            throw new IllegalStateException("В builder.PersonBuilder не установлена фамилия!");
         }
 
         return new Person(name, surName, age, city);

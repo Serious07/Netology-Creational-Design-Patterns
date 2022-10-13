@@ -1,3 +1,5 @@
+package Builder;
+
 public class Person {
     protected final String name;
     protected final String surName;
@@ -68,7 +70,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "builder.Person{" +
                 "name='" + name + '\'' +
                 ", surName='" + surName + '\'' +
                 ", age=" + age +
